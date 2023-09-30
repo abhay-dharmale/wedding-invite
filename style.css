@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=M+PLUS+Rounded+1c:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --font-family-primary: 'Dancing Script', cursive;
+    --font-family-secondary: 'Poppins';
+    --font-family-tertiary: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+
+#page-1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #E8EDE9;
+}
+
+#page-1 nav {
+    height: 5vh;
+    padding: 4rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .head {
+    color: #8199A5;
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    font-family: var(--font-family-secondary);
+    font-weight: 100;
+    color: #56676f;
+    font-size: 1.1rem;
+}
+
+nav .links i {
+    display: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#page-1 .homepage {
+    height: 83%;
+    width: 100%;
+    display: flex;
+}
+
+.homepage .left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.homepage .left .image-cont {
+    height: 75%;
+    width: 48%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-image: url(https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+}
+
+.homepage .right {
+    height: 100%;
+    width: 40%;
+}
+
+.right .heading {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 15rem;
+}
+
+.homepage .right h1 {
+    font-size: 4.5rem;
+    font-family: var(--font-family-primary);
+    color: #3b4a52;
+    padding-left: 1.3em;
+}
+
+.homepage .right p {
+    font-size: 1em;
+    color: #3b4a52d1;
+    font-family: var(--font-family-tertiary);
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 2rem 0 0 6rem;
+}
+
+
+ /* ------------------------------------ PAGE 2 */
+
+
+#page-2{
+    height: 100vh;
+    width: 100%;
+    background-color: #A0B9C0;
+    display: flex;
+}
+
+#page-2 .left{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    width: 50%;
+    color: #FFFFFF;
+    font-family: var(--font-family-tertiary);
+    padding-right: 5rem;
+    padding: 0;
+}
+
+#page-2 .left .content{
+    text-align: left;
+    width: 85%;
+    height: 65%;
+}
+
+.left .content h1{
+    font-size: 3rem;
+    padding: 1.2rem;
+    font-family: var(--font-family-primary);
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 5px;
+}
+
+.left .content h5{
+    font-size: 0.9rem;
+    padding: 1rem;
+    line-height: 2;
+    font-family: var(--font-family-secondary);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.left .content span{
+    color: #6a7457;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#page-2 .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-2 .right .image-cont-2{
+    height: 65%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcxfHx3ZWRkaW5nJTIwYmFja2dyb3VuZHxlbnwwfDF8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: bottom;
+    border-top-left-radius: 155px;
+    border-top-right-radius: 155px;
+    border-bottom-left-radius: 155px;
+    border-bottom-right-radius: 155px;
+}
+
+
+
+
+
+@media (max-width:375px) {
+
+
+    #page-1 nav {
+        height: 5vh;
+        padding: 3rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .head {
+        color: #8199A5;
+        font-family: var(--font-family-primary);
+        font-size: 4vw;
+        line-height: 0.9;
+        font-weight: normal;
+    }
+
+    nav .links h4 {
+        display: none;
+    }
+
+    nav .links i {
+        display: initial;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    #page-1 .homepage {
+        height: 83%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homepage .left {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homepage .left .image-cont {
+        margin-top: 3.5rem;
+        height: 110%;
+        width: 68%;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        background-position: center;
+    }
+
+    .right .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .homepage .right {
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .homepage .right h1 {
+        font-size: 4rem;
+        font-family: var(--font-family-primary);
+        color: #3b4a52;
+        line-height: 0.8;
+        padding: 1em 1em 0 1em;
+    }
+
+    .homepage .right p {
+        font-size: 0.8em;
+        color: #3b4a52d1;
+        font-family: var(--font-family-tertiary);
+        font-weight: 600;
+        line-height: 1.3;
+        text-align: center;
+        margin: 1.2em;
+    }
+
+/* -------------------------------------- PAGE 2 */
+#page-2{
+    height: 100vh;
+    width: 100%;
+    background-color: #A0B9C0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem 0.3rem;
+}
+
+#page-2 .left{
+    justify-content: center;
+    width: 100%;
+}
+
+#page-2 .left .content{
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    padding-top: 0;
+    margin-top: -4rem;
+}
+
+.left .content h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.left .content h5{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-top: -1.5em;
+}
+
+#page-2 .right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-2 .right .image-cont-2{
+    height: 100%;
+    width: 100%;
+    background-position: bottom;
+    border-top-left-radius: 115px;
+    border-top-right-radius: 115px;
+    border-bottom-left-radius: 115px;
+    border-bottom-right-radius: 115px;
+    margin: 0 2rem;
+}
+
+
+}
