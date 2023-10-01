@@ -61,8 +61,7 @@ gsap.from("#page-2 .right .image-cont-2", {
         trigger: "#page-3 #info", 
         scroller: "body",
         start: "top 75%", 
-        end: "top 30%",
+        end: "top 50%",
         scrub: true,
-        markers:true
     },
   });
