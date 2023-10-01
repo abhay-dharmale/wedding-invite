@@ -24,9 +24,10 @@ gsap.from('#page-1 .homepage .left .image-cont', {
 
 gsap.from('#page-1 nav', {
     opacity: 0,
-    y: -100,
-    delay: 0.5,
-    duration: 0.7,
+    // y: -100,
+    delay: 0.4,
+    duration: 2,
+    // stagger: 0.5,
 })
 
 gsap.from("#page-2 .right .image-cont-2", {
@@ -54,15 +55,14 @@ gsap.from("#page-2 .right .image-cont-2", {
 
   gsap.from("#page-3 #info", {
     opacity: 0,
-    scale: 0.8,
-    duration: 1,
-    stagger: 0.5,
+    scale: 0.6,
+    duration: 1.5,
+    stagger: 0.8,
     scrollTrigger: { 
         trigger: "#page-3 #info", 
         scroller: "body",
         start: "top 75%", 
-        end: "top 30%",
+        end: "top 10%",
         scrub: true,
-        markers:true
     },
   });
