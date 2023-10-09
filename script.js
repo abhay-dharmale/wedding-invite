@@ -30,28 +30,6 @@ gsap.from('#page-1 nav', {
     // stagger: 0.5,
 })
 
-gsap.from("#page-2 .right .image-cont-2", {
-    scale: 0.9,
-    duration: 3,
-    scrollTrigger: { 
-        trigger: "#page-2 .right .image-cont-2", 
-        scroller: "body",
-        start: "top 500", 
-        end: "top 100",
-        scrub: true,
-    },
-  });
-
-  gsap.from("#page-2 .left .content .main-span", {
-    opacity:0,
-    duration: 3,
-    scrollTrigger: { 
-        trigger: "#page-2 .left .content .main-span", 
-        scroller: "body",
-        start: "top 90%", 
-        end: "top 55%",
-    },
-  });
 
   gsap.from("#page-3 #info", {
     opacity: 0,
