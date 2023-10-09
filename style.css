@@ -16,6 +16,11 @@
     padding: 0;
 }
 
+*::selection{
+    color: #3B4A52;
+    background-color: #ababab;
+}
+
 html,
 body {
     height: 100%;
@@ -182,6 +187,8 @@ nav .links i {
 
 
 
+
+
 /* -------------------------------------------- Page 3 */
 
 #page-3{
@@ -198,14 +205,15 @@ nav .links i {
     height: 350px;
     width: 25%;
     background-image: url(https://img.freepik.com/free-vector/hand-drawn-flowers-background_79603-1546.jpg?size=626&ext=jpg&ga=GA1.1.44283530.1696849765&semt=ais);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
     text-align: center;
     border-radius: 15px;
     font-size: 0.7rem;
     overflow: hidden;
     position: relative;
     z-index: -1;
-    background-size: cover;
+    background-position: bottom;
+    /* background-size: cover; */
 }
 
 #page-3 .info-1 span{
@@ -228,7 +236,7 @@ nav .links i {
     font-weight: 600;
     color: #191f23be;
     z-index: 2;
-
+    font-size: 1.3em;
     
 } 
 
@@ -270,6 +278,7 @@ nav .links i {
 #page-4 .right{
     height: 100%;
     width: 50%;
+    overflow: hidden;
 }
 
 #page-4 .right .schedule{
